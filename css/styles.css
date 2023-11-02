@@ -608,6 +608,14 @@ ol {
     letter-spacing: 0.32px;
     margin-bottom: 16px;
 }
+.footer-subscribe-text {
+    color: var(--white-background-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
 .container-footer {
     display: flex;
     align-items: baseline;
@@ -619,48 +627,62 @@ ol {
 .footer-two {
     margin-right: 120px;
 }
+.footer-three {
+    margin-right: 80px;
+}
 .footer-form {
     display: flex;
     gap: 24px;
 }
 
-.footer-label {
+.subscribe-div {
     display: block;
 }
 
 .footer-input {
-    gap: 24px;
+    background-color: transparent;
     width: 264px;
     height: 40px;
-    border: 1px solid #ffffff;
-    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid var(--white-background-color);
+    padding-left: 16px;
+    color: var(--white-background-color);
     font-size: 12px;
     line-height: 1.5;
-    letter-spacing: 0.04em;
-    padding-left: 16px;
+    letter-spacing: 0.48px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: #ffffff;
+}
+.footer-input::placeholder {
+    color: var(--white-background-color);
+}
+
+.footer-input:focus {
+    outline: none;
+    color: var(--white-background-color);
 }
 
 .footer-subscribe-button {
+    display: flex;
     min-width: 165px;
     height: 40px;
-    display: flex;
+    padding: 8px 24px;
     justify-content: center;
     align-items: center;
-    font-family: "Roboto", sans-serif;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--primary-brand-color);
+    color: var(--white-background-color);
+    font-family: inherit;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #4D5AE5;
-    border: none;
-    border-radius: 4px;
+    letter-spacing: 0.64px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+    background-color: var(--pressed-state-color);
+}
 .footer-svg-button {
     margin-left: 16px;
 }
