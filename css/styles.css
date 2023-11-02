@@ -747,8 +747,18 @@ ol {
 .modal-form {
     margin-bottom: 8px;
 }
+
 .user-data-div {
     position: relative;
+}
+.user-data-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--subtle-text-color);
+    display: block;
+    margin-bottom: 4px;
+
 }
 .user-data-input {
     border-radius: 4px;
