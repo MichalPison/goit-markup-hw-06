@@ -781,6 +781,9 @@ ol {
 .user-data-icon:active  {
     fill: var(--primary-brand-color); 
 }
+.madal-comment-div {
+    margin-bottom: 16px;
+}
 .modal-textarea {
     width: 100%;
     height: 120px;
