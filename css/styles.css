@@ -630,7 +630,7 @@ ol {
 .footer-three {
     margin-right: 80px;
 }
-.footer-form {
+.form-footer {
     display: flex;
     gap: 24px;
 }
